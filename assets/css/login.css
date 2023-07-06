@@ -1,0 +1,90 @@
+* {
+    font-family: 'Hind', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('/background.webp');
+    backdrop-filter: blur(3px);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+section.septela {
+    color: white;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    border: 2px solid white;
+    border-radius: 1rem;
+    background: rgba(217, 217, 217, 0.1);
+}
+
+div.part1,div.part2 {
+    margin: 1rem;
+}
+
+div.part2 {
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    border: none;
+    outline: none;
+    margin: .5rem;
+    background: rgba(217, 217, 217, 0.30);
+    width: auto;
+    height: 40px;
+    border-radius: 1rem;
+    padding-left: 10px;
+}
+
+input::placeholder {
+    color: white;
+}
+
+h1 {
+    text-align: center;
+}
+
+section.septela div.part2 h1 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+button {
+    margin: .5rem;
+    cursor: pointer;
+    width: auto;
+    height: 40px;
+    border: 1px solid;
+    border-radius: 1rem;
+    color: #e70e82;
+    transition: height 0ms;
+}
+
+button:hover {
+    border: transparent;
+    color: white;
+    animation-name: example;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    height: 55px;
+}
+
+@keyframes example {
+    20%  {background-color: #f3295d;}
+    40%  {background-color: #e70f80;}
+    60%  {background-color: #fb493f;}
+    80%  {background-color: #fe802d;}
+    100% {background-color: #b50fab;}
+}

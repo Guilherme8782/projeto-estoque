@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+
+    <link rel="stylesheet" href="assets/css/login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind&display=swap" rel="stylesheet">
+</head>
+<body>
+   
+    <section class="septela">
+
+        <div class="part1">
+            <h1>Bem-Vindo</h1>
+            <p>Entre com seu login e senha para ter acesso ao seu estoque</p>
+        </div>
+            
+        <div class="part2">
+            <h1>Entrar</h1>
+            <input type="text" class="email" placeholder="Usuário" >
+            <input type="password" class="senha" placeholder="Senha" >
+            <button type="button" onclick="login()" >Entrar</button>
+        </div>
+
+    </section>
+    
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
+    <script src="assets/js/auth/firebase.js"></script>
+</body>
+</html>

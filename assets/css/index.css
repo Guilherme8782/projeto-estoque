@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+}
+
+hr {
+    color: black;
+    background: none;
+}
+
+body {
+    background-image: url('/background.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main {
+    background: rgba(217, 217, 217, 0.3);
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    border: 1px transparent;
+    border-radius: 1rem;
+}
+
+.navbarcontent {
+    margin-right: 1rem;
+    margin-left: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputsearch {
+    display: flex;
+    border-right: none;
+    border-radius: 1rem 0px 0px 1rem;
+    width: 75%;
+    height: 40px;
+    padding-left: 10px;
+    outline: none;
+    border: none;
+}
+
+.btnsearch {
+    border-radius: 0px 1rem 1rem 0px;
+    cursor: pointer;
+    width: 35px;
+    height: 40px;
+}
+
+.part1, .part2 {
+    margin: 1rem;
+    margin-bottom: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.part2 {
+    margin-top: 0px;
+}
+
+.part1 .content1, .part1 .content2, .part2 .content3, .part2 .content4 {
+    margin: 1rem;
+    text-align: center;
+    width: 250px;
+    height: 50px;
+    padding: 1rem;
+    border: 1px solid black;
+}
+
+section h1 {
+    text-align: center;
+}
+
+.produtos {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 1rem;
+    margin: 1rem;
+    padding-left: 10px;
+}
+
+@media (min-width:622px) {
+    .inputsearch {
+        width: 90%;
+    }
+}
