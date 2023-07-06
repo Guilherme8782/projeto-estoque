@@ -23,7 +23,7 @@ var firebaseConfig = {
     auth.signInWithEmailAndPassword(email, senha)
       .then(function(user) {
         alert("Login bem-sucedido!");
-        window.location = "assets/pages/index.html"
+        window.location = "assets/pages/main.html"
       })
       .catch(function(error) {
         // Trate erros de login aqui
