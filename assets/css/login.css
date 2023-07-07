@@ -9,7 +9,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-image: url('/background.webp');
+    background-image: url('../imgs/background.webp');
     backdrop-filter: blur(3px);
     background-size: cover;
     background-position: center;
