@@ -3,9 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/index.css">
     <title>Document</title>
+
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <main>
 
@@ -13,41 +18,155 @@
             <nav>
                 <div class="navbarcontent">
                     <input type="text" class="inputsearch" placeholder="Procure aqui...">
-                    <button type="button" class="btnsearch"></button>
+                    <button type="button" onclick="search()" class="btnsearch"></button>
                 </div>
             </nav>
         </header>
 
         <section class="estatics">
             <div class="part1">
-                <p class="content1">
-                    Estoque Total
-                </p>
+                    <ol onclick="somaentradas()" class="content1">
+                        <h3>Estoque Total</h3>
+                        <li>12000</li>
+                    </ol>
 
-                <p class="content2">
-                Itens preço em estoque 
-                </p>
+                    <ol class="content2">
+                        <h3>Preço em Estoque</h3>
+                        <li>12000</li>
+                    </ol>
             </div>
         
             <div class="part2">
-                <p class="content3">
-                    Saídas
-                </p>
+                <ol class="content3">
+                    <h3>Entradas</h3>
+                    <li>12000</li>
+                </ol>
 
-                <p class="content4">
-                Entradas
-                </p>
+                <ol class="content4">
+                    <h3>Saídas</h3>
+                    <li>12000</li>
+                </ol> 
+
             </div>
         
         </section>
 
         <section>
             <h1>Estoque Disponível</h1>
-            <div class="produtos"></div>
+            <section class="estoquecontent">
+              <div class="produto">
+                <p class="nome">Produto</p>
+                <p class="entrada">Entradas</p>
+                <p class="saida">Saídas</p>
+            </div>
+            <div class="produto">
+                <p class="nome">Pneu</p>
+                <p class="entrada">Entradas: 100</p>
+                <p class="saida">Saídas: 85</p>
+            </div>
+            <div class="produto">
+                <p class="nome">Fita LED</p>
+                <p class="entrada">Entradas: 50</p>
+                <p class="saida">Saídas: 40</p>
+            </div>
+            <div class="produto">
+                <p class="nome">Bateria</p>
+                <p class="entrada">Entradas: 30</p>
+                <p class="saida">Saídas: 25</p>
+            </div>
+            <div class="produto">
+                <p class="nome">Chave de fenda</p>
+                <p class="entrada">Entradas: 80</p>
+                <p class="saida">Saídas: 75</p>
+            </div>
+            <div class="produto">
+                <p class="nome">Lâmpada LED</p>
+                <p class="entrada">Entradas: 70</p>
+                <p class="saida">Saídas: 60</p>
+            </div>
+            <div class="produto">
+                <p class="nome">Óleo de motor</p>
+                <p class="entrada">Entradas: 40</p>
+                <p class="saida">Saídas: 35</p>
+            </div>
+            <div class="produto">
+                <p class="nome">Cabo USB</p>
+                <p class="entrada">Entradas: 60</p>
+                <p class="saida">Saídas: 55</p>
+            </div>
+            <div class="produto">
+                <p class="nome">Alicate</p>
+                <p class="entrada">Entradas: 90</p>
+                <p class="saida">Saídas: 85</p>
+            </div>
+            <div class="produto">
+                <p class="nome">Caixa de fusíveis</p>
+                <p class="entrada">Entradas: 25</p>
+                <p class="saida">Saídas: 20</p>
+            </div>
+            <div class="produto">
+                <p class="nome">Lanterna</p>
+                <p class="entrada">Entradas: 75</p>
+                <p class="saida">Saídas: 70</p>
+            </div>
+            <div class="produto">
+                <p class="nome">Carregador de celular</p>
+                <p class="entrada">Entradas: 55</p>
+                <p class="saida">Saídas: 50</p>
+            </div>
+            <div class="produto">
+                <p class="nome">Ferramenta multiuso</p>
+                <p class="entrada">Entradas: 45</p>
+                <p class="saida">Saídas: 40</p>
+            </div>
+            <div class="produto">
+                <p class="nome">Extensão elétrica</p>
+                <p class="entrada">Entradas: 65</p>
+                <p class="saida">Saídas: 60</p>
+            </div>
+            <div class="produto">
+                <p class="nome">Adaptador de tomada</p>
+                <p class="entrada">Entradas: 35</p>
+                <p class="saida">Saídas: 30</p>
+            </div>
+            <div class="produto">
+                <p class="nome">Fone de ouvido</p>
+                <p class="entrada">Entradas: 50</p>
+                <p class="saida">Saídas: 45</p>
+            </div>
+            <div class="produto">
+                <p class="nome">Lixa de unha</p>
+                <p class="entrada">Entradas: 100</p>
+                <p class="saida">Saídas: 95</p>
+            </div>
+            <div class="produto">
+                <p class="nome">Escova de dentes</p>
+                <p class="entrada">Entradas: 70</p>
+                <p class="saida">Saídas: 65</p>
+            </div>
+            <div class="produto">
+                <p class="nome">Caneta esferográfica</p>
+                <p class="entrada">Entradas: 90</p>
+                <p class="saida">Saídas: 85</p>
+            </div>
+            <div class="produto">
+                <p class="nome">Parafuso</p>
+                <p class="entrada">Entradas: 120</p>
+                <p class="saida">Saídas: 115</p>
+            </div>
+            <div class="produto">
+                <p class="nome">Chave inglesa</p>
+                <p class="entrada">Entradas: 40</p>
+                <p class="saida">Saídas: 35</p>
+            </div>
+            
+            </section>
         </section>
     
     </main>
 
     <script src="../js/api/index.js"></script>
+    <script src="../js/static/search.js"></script>
+    <script src="../js/static/header.js"></script>
 </body>
 </html>
