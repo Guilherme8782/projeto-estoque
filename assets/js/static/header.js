@@ -48,3 +48,26 @@ function totalestoque() {
     const resultado = document.querySelector('ol.content1 li');
     resultado.innerHTML = conta 
 }
+
+function quantidade() {
+    const quantidade = document.querySelectorAll('.quantidade');
+    const preço = document.querySelectorAll('.preço');
+    let sumquant = 0;
+    let sumpreco = 0;
+
+    for (let i = 0; i < quantidade.length; i++) {
+        const element = quantidade[i];
+        const convert = Number(element.textContent.slice(12))
+        sumquant += convert;
+    }
+
+    for (let i = 0; i < preço.length; i++) {
+        const element = preço[i];
+        const convert = Number(element.textContent.slice(10))
+        sumpreco += convert;
+    }
+
+    const conta = sumquant * sumpreco
+    const resultado = document.querySelector('ol.content2 li')
+    resultado.innerHTML = 'R$ ' + conta
+}
