@@ -97,6 +97,54 @@ section h1 {
     background-color: white;
 }
 
+.overlay {
+    top: 10%;
+    left: 10%;
+    position: fixed;
+    width: 80%;
+    height: 80%;
+    border: 1px solid black;
+    border-radius: 1rem;
+    background-color: rgba(255, 255, 255, .9);
+    display: none;
+    z-index:1;
+}
+
+.itens {
+    display: flex;
+    margin: 1rem;
+    align-items: center;
+    flex-direction: column;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    margin: 3rem;
+}
+
+form .first {
+    margin-top: 0;
+}
+
+form .last {
+    margin-bottom: 2rem;
+}
+
+form input {
+    width: 400px;
+    height: 35px;
+    margin: .5rem;
+    outline: none;
+}
+
+.exit {
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
+    margin: 1rem;
+}
+
 @media (min-width:622px) {
     .inputsearch {
         width: 90%;
